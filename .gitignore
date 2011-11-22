@@ -1,2 +1,6 @@
 *.pyc
 env/
+*~
+*.log
+.coverage
+_build/
