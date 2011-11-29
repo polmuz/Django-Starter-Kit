@@ -100,8 +100,11 @@ Docstrings
 
 First of all, go to `docs/conf.py` and uncomment the line
 `sys.path.insert(0, os.path.abspath('.'))` and replace the `'.'` with
-your django project relative path `../yourproject`. Now you'll be able to generate docs from
-your docstrings.
+your django project relative path `../yourproject`. Now you'll be able
+to generate docs from your docstrings.
+
+.. note:: You may have problems with this if sphinx can't find your
+   django settings, see `Settings setup`_ on how to solve this.
 
 To do this you can create a rst (lets say `yourapp.rst`) file that
 looks like this::
@@ -137,3 +140,16 @@ Then you can include something like this in your `index.rst`::
       :maxdepth: 2
 
       reference_yourapp
+
+Settings
+========
+
+Settings setup
+--------------
+
+It's a good practice to have an environment variable with our default
+settings. This can be done with hooks for our virtualenv::
+
+    $ echo "export DJANGO_SETTINGS_MODULE=settings" >> $VIRTUAL_ENV/bin/postactivate
+    $ echo "unset DJANGO_SETTINGS_MODULE" >> $VIRTUAL_ENV/bin/postdeactivate
+
