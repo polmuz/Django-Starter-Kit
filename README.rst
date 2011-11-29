@@ -14,17 +14,28 @@ First of all
 Virtualenv
 ----------
 
-Install last version of virtualenv::
+Install last version of virtualenv and virtualenvwrapper::
 
-  $ sudo pip install virtualenv
+  $ sudo pip install virtualenv virtualenvwrapper
+
+.. tip::
+  Add `. virtualenvwrapper.sh` to your `.bashrc` file to make all
+  virtualenvwrapper commands available.
 
 Create a virtualenv::
 
-  $ virtualenv --no-site-packages env
+  $ mkvirtualenv --no-site-packages myenv
+
+.. caution::
+  Virutalenvwrapper puts all environments in a directory (usually
+  `~/.virtualenvs`), which means that you have a global namespace of
+  virtualenvs. A good practice would be to prefix the virtualenv name
+  with part of the name of the project to make it unique, somethign
+  like `dskenv` for Django Starter Kit.
 
 Activate the environment::
 
-  $ . env/bin/activate
+  $ workon myenv
 
 Install requirements::
 
@@ -78,7 +89,7 @@ Configure
 To include more files in the main doc, add the names without the
 extension under `toctree`::
 
-  .. toctree::p
+  .. toctree::
     :maxdepth: 2
 
     mydocfile
