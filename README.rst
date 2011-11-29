@@ -69,6 +69,10 @@ Documentation
 From scratch
 ------------
 
+Install Sphinx::
+
+  $ pip install sphinx
+
 Run and follow the wizard::
 
   $ sphinx-quickstart
