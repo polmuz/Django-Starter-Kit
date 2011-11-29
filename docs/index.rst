@@ -6,13 +6,14 @@
 Welcome to Django Starter Kit's documentation!
 ==============================================
 
-Stuff
------
+Guides & Guidelines
+-------------------
 
 .. toctree::
    :maxdepth: 2
 
-   mydocfile
+   guidelines/before_you_start
+   guidelines/registration
 
 
 API/Reference Docs

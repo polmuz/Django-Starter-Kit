@@ -1,0 +1,5 @@
+You requested an account with our site, here is the activation url:
+
+https://{{ site }}/accounts/activate/{{ activation_key }}/
+
+Thanks
