@@ -2,6 +2,8 @@
 Before you start
 ================
 
+Some things you should do before you start to code.
+
 Sites
 =====
 

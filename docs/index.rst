@@ -14,7 +14,7 @@ Guides & Guidelines
 
    guidelines/before_you_start
    guidelines/registration
-
+   guidelines/emailing
 
 API/Reference Docs
 --------------------
@@ -31,4 +31,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
